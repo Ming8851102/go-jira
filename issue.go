@@ -137,6 +137,7 @@ type IssueFields struct {
 	AggregateTimeOriginalEstimate int           `json:"aggregatetimeoriginalestimate,omitempty" structs:"aggregatetimeoriginalestimate,omitempty"`
 	AggregateTimeSpent            int           `json:"aggregatetimespent,omitempty" structs:"aggregatetimespent,omitempty"`
 	AggregateTimeEstimate         int           `json:"aggregatetimeestimate,omitempty" structs:"aggregatetimeestimate,omitempty"`
+	Versions                   	  []*FixVersion `json:"versions,omitempty" structs:"versions,omitempty"`
 	Unknowns                      tcontainer.MarshalMap
 }
 
